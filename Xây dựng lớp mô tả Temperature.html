@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Temperature{
+      C;
+      F;
+      kenvin;
+
+      constructor(C, F, kenvin) {
+          this.C = C;
+          this.F = F;
+          this.kenvin = kenvin;
+      }
+
+      getC() {
+          return this.C;
+      }
+
+      setC(C) {
+          this.C = C;
+      }
+
+      getF() {
+          return (this.C * 1.8) + 32;
+      }
+      getKenvin() {
+          return this.C + 273.15;
+      }
+  }
+  let temperature = new Temperature(25);
+  temperature.setC(25);
+  console.log(temperature.getF());
+  console.log(temperature.getKenvin());
+
+</script>
+
+</body>
+</html>

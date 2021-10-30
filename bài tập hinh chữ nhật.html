@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>hinhchunhat</title>
+</head>
+<body>
+<canvas id="mycanvas" width="1000px" height="600px" style="border: 1px solid"></canvas>
+<script>
+    class Rectangle{
+        longs;
+        width;
+
+        constructor(longs,width) {
+            this.longs = longs;
+            this.width = width;
+
+        }
+        getLongs(){
+            return this.longs;
+        }
+        setLongs(){
+            this.longs = longs;
+        }
+        getWidth(){
+            return this.width;
+        }
+        setWidth(){
+            this.width = width;
+        }
+        getArea(){
+            return this.longs * this. width;
+        }
+
+        getPerimeter(){
+            return (this.longs + this.width)/2;
+        }
+
+            hinhChuNhat(x,y){
+                let ve = document.getElementById("mycanvas").getContext("2d")
+                     ve.fillRect(x,y,this.width,this.longs)
+                    ve.fill()
+            }
+        }
+
+    let rectangle = new Rectangle( 100, 400,)
+    let perimeter = rectangle.getPerimeter();
+    let area = rectangle.getArea();
+    alert("perimeter: " + perimeter + "; area :" + area);
+    rectangle.hinhChuNhat(0,0)
+</script>
+</body>
+</html>

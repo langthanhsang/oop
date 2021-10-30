@@ -1,0 +1,3 @@
+cass HinhChuNhat {
+
+}
